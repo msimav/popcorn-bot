@@ -2,7 +2,7 @@
 import os
 import requests
 
-GIF = 'https://media.giphy.com/media/ftXvsSyRzKXXG/giphy.gif'
+GIF = os.getenv('GIF_URL', 'https://media.giphy.com/media/pUeXcg80cO8I8/giphy.gif')
 BASE = 'https://api.telegram.org/bot%s' % (os.environ['TOKEN'],)
 
 
